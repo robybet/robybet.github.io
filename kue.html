@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kue.css">
+    <title>Ulang Tahun Bahagia</title>
+</head>
+<body>
+    <div class="gift-box" onclick="showGift()">
+        <img src="gifbox.gif" alt="Gift Box">
+    </div>
+
+    <div class="cake" onclick="showCake()">
+        <img src="cake.gif" alt="Birthday Cake">
+    </div>
+
+    <div class="balloon" onclick="showBalloon()">
+        <img src="Balon.gif" alt="Birthday Balloon">
+    </div>
+
+    <div class="modal" id="giftModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Selamat Ulang Tahun!</p>
+            <img src="gifbox.gif" alt="Gift Box">
+        </div>
+    </div>
+
+    <script src="kue.js"></script>
+</body>
+</html>

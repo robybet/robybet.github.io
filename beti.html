@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beti.css">
+    <title>Ucapan Selamat Ulang Tahun!</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="animated-text">Selamat Ulang Tahun!</h1>
+        </header>
+        <section class="birthday-card">
+            <img src="Beti.jpg" alt="Ulang Tahun" class="birthday-img">
+            <p>19 Januari 2024, yeey this is ur special day. Selamat Ulang Tahun yang ke 20 Kak Rizky Vania Betarisanti (bagus banget namanya betew hehehe)</p>
+            <p>Semoga di umur kakak yang udah masuk ke kepala dua ini, kakak senantiasa diberi kebahagiaan, kesehatan dan kesuksesan.
+                semoga segala apa yang disemogakan kakak jadi kenyataan ya kakk. Aku selalu dukung kakakk.
+            </p>
+        </section>
+        <div class="confetti"></div>
+        <div class="audio-controls">
+            <audio id="happyBirthdayAudio" src="pianof.MP3" preload="auto"></audio>
+            <button onclick="playAudio()">Putar Lagu</button>
+            <button onclick="openNewPage()">Pecahin Semua Balon</button>
+        </div>
+        <div class="cake-popup" id="cakePopup">
+            <img src="FINL.gif" alt="Kue Ulang Tahun">
+        </div>
+        <footer>
+            <p>Dibuat oleh <a href="https://www.instagram.com/feelroby/">someone who will always be there for you.</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('happyBirthdayAudio');
+            audio.play();
+            showCakePopup();
+        }
+
+        function showCakePopup() {
+            var cakePopup = document.getElementById('cakePopup');
+            cakePopup.style.display = 'block';
+            setTimeout(function() {
+                cakePopup.style.display = 'none';
+            }, 30000); // Tutup pop-up setelah 5 detik
+        }
+
+        function openNewPage() {
+            window.open('https://gifft.me/id/d#EdxPWOhxBwGtG8pr9zZb', '_blank');
+        }
+    </script>
+</body>
+</html>
